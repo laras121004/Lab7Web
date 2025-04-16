@@ -1,0 +1,42 @@
+CRITICAL - 2025-03-17 13:49:15 --> ParseError: syntax error, unexpected string content "welcome_message);"
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-17 14:29:10 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "artikel/admin_index.php"
+[Method: GET, Route: admin/artikel]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('artikel/admin_index', [], true)
+ 3 APPPATH\Controllers\Artikel.php(38): view('artikel/admin_index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->admin_index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_ci\\ci4\\public\\index.php')
+CRITICAL - 2025-03-17 14:30:25 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "template/admin_header.php"
+[Method: GET, Route: admin/artikel]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/admin_header.php')
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/admin_header', null, true)
+ 3 APPPATH\Views\artikel\admin_index.php(1): CodeIgniter\View\View->include('template/admin_header')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\artikel\\admin_index.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('artikel/admin_index', [], true)
+ 7 APPPATH\Controllers\Artikel.php(38): view('artikel/admin_index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->admin_index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_ci\\ci4\\public\\index.php')

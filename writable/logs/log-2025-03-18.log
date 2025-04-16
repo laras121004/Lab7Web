@@ -1,0 +1,1103 @@
+ERROR - 2025-03-18 07:04:40 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\lab11_ci\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lab_ci4', 3306, '', 0)
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(933): App\Controllers\Artikel->index()
+#8 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#9 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\lab11_ci\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\lab11_ci\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\lab11_ci\ci4\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\lab11_ci\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(933): App\Controllers\Artikel->index()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#8 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lab11_ci\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lab11_ci\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\lab11_ci\ci4\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-03-18 07:04:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: artikel]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Artikel.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_ci\\ci4\\public\\index.php')
+ERROR - 2025-03-18 07:05:05 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\lab11_ci\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lab_ci4', 3306, '', 0)
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(933): App\Controllers\Artikel->index()
+#8 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#9 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\lab11_ci\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\lab11_ci\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\lab11_ci\ci4\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\lab11_ci\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(933): App\Controllers\Artikel->index()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#8 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lab11_ci\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lab11_ci\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\lab11_ci\ci4\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-03-18 07:05:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: artikel]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Artikel.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_ci\\ci4\\public\\index.php')
+CRITICAL - 2025-03-18 13:04:39 --> ErrorException: Undefined variable $title
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 4.
+ 1 APPPATH\Views\home.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\home.php', 4)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_ci\\ci4\\public\\index.php')
+CRITICAL - 2025-03-18 13:05:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "main.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('main.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('main', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('main')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_ci\\ci4\\public\\index.php')
+CRITICAL - 2025-03-18 13:53:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "contact.php"
+[Method: GET, Route: contact]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('contact.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('contact', [], true)
+ 3 APPPATH\Controllers\page.php(15): view('contact', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->contact()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_ci\\ci4\\public\\index.php')
+CRITICAL - 2025-03-18 13:57:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "contact.php"
+[Method: GET, Route: contact]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('contact.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('contact', [], true)
+ 3 APPPATH\Controllers\page.php(15): view('contact', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->contact()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_ci\\ci4\\public\\index.php')
+CRITICAL - 2025-03-18 13:57:55 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 13:58:35 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:03:00 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:03:02 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:03:04 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:03:10 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:03:14 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:03:18 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:03:18 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:03:20 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:03:21 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:03:22 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:03:31 --> ErrorException: Undefined variable $title
+[Method: GET, Route: /]
+in APPPATH\Views\welcome_message.php on line 4.
+ 1 APPPATH\Views\welcome_message.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\welcome_message.php', 4)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('welcome_message')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_ci\\ci4\\public\\index.php')
+CRITICAL - 2025-03-18 14:04:54 --> ErrorException: Undefined variable $title
+[Method: GET, Route: /]
+in APPPATH\Views\welcome_message.php on line 4.
+ 1 APPPATH\Views\welcome_message.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\welcome_message.php', 4)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('welcome_message')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_ci\\ci4\\public\\index.php')
+CRITICAL - 2025-03-18 14:04:56 --> ErrorException: Undefined variable $title
+[Method: GET, Route: /]
+in APPPATH\Views\welcome_message.php on line 4.
+ 1 APPPATH\Views\welcome_message.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\welcome_message.php', 4)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('welcome_message')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_ci\\ci4\\public\\index.php')
+CRITICAL - 2025-03-18 14:07:26 --> ErrorException: Undefined variable $title
+[Method: GET, Route: /]
+in APPPATH\Views\welcome_message.php on line 4.
+ 1 APPPATH\Views\welcome_message.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\welcome_message.php', 4)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('welcome_message')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_ci\\ci4\\public\\index.php')
+CRITICAL - 2025-03-18 14:07:29 --> ErrorException: Undefined variable $title
+[Method: GET, Route: /]
+in APPPATH\Views\welcome_message.php on line 4.
+ 1 APPPATH\Views\welcome_message.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\welcome_message.php', 4)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('welcome_message')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_ci\\ci4\\public\\index.php')
+CRITICAL - 2025-03-18 14:07:40 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:07:50 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:07:51 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:07:55 --> ErrorException: Undefined variable $title
+[Method: GET, Route: /]
+in APPPATH\Views\welcome_message.php on line 4.
+ 1 APPPATH\Views\welcome_message.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\welcome_message.php', 4)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('welcome_message')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_ci\\ci4\\public\\index.php')
+CRITICAL - 2025-03-18 14:08:25 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:08:26 --> ErrorException: Undefined variable $title
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 4.
+ 1 APPPATH\Views\home.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\home.php', 4)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_ci\\ci4\\public\\index.php')
+CRITICAL - 2025-03-18 14:08:56 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:17:27 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:17:31 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:17:32 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:17:40 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:17:42 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:17:57 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:17:58 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:23:29 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:23:31 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:23:32 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:23:37 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:23:37 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:23:39 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:23:41 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:23:42 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:23:43 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:23:44 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:23:55 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:23:56 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:23:57 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:24:08 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:24:10 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:24:11 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:26:42 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:26:44 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:26:46 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:27:01 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:27:02 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:27:05 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:27:06 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:27:07 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:27:10 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:27:11 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:28:42 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:28:45 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:28:46 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:28:47 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:28:49 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:28:49 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:30:46 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:30:49 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:30:50 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:30:53 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:30:54 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:30:55 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:31:42 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:31:44 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:31:45 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:31:46 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:31:51 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:31:56 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:31:58 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:31:59 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:32:00 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:32:03 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:32:06 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:32:07 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:32:08 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:32:14 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:32:15 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:32:16 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:32:17 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:32:22 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:32:30 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:32:31 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:35:28 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:35:32 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:35:35 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:35:36 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:35:37 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:35:54 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:36:07 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:36:10 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:40:31 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: artikel]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:40:33 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: artikel]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:40:34 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:40:35 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:40:37 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:40:37 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: artikel]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:40:39 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:40:40 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: artikel]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:40:41 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: artikel/artikel-pertama]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:40:43 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:40:44 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:40:45 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:40:46 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: artikel]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 14:45:37 --> ArgumentCountError: Too few arguments to function CodeIgniter\View\Cell::__construct(), 0 passed in C:\xampp\htdocs\lab11_ci\ci4\system\Config\Factories.php on line 152 and exactly 1 expected
+[Method: GET, Route: artikel]
+in SYSTEMPATH\View\Cell.php on line 62.
+ 1 SYSTEMPATH\Config\Factories.php(152): CodeIgniter\View\Cell->__construct()
+ 2 SYSTEMPATH\View\Cell.php(186): CodeIgniter\Config\Factories::__callStatic('cells', [])
+ 3 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 4 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini::render', null, 0, null)
+ 5 APPPATH\Views\layout\main.php(24): view_cell('App\\Cells\\ArtikelTerkini::render')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\layout\\main.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('artikel/index', [], true)
+10 APPPATH\Controllers\Artikel.php(15): view('artikel/index', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->index()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_ci\\ci4\\public\\index.php')
+CRITICAL - 2025-03-18 14:45:45 --> ArgumentCountError: Too few arguments to function CodeIgniter\View\Cell::__construct(), 0 passed in C:\xampp\htdocs\lab11_ci\ci4\system\Config\Factories.php on line 152 and exactly 1 expected
+[Method: GET, Route: about]
+in SYSTEMPATH\View\Cell.php on line 62.
+ 1 SYSTEMPATH\Config\Factories.php(152): CodeIgniter\View\Cell->__construct()
+ 2 SYSTEMPATH\View\Cell.php(186): CodeIgniter\Config\Factories::__callStatic('cells', [])
+ 3 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 4 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini::render', null, 0, null)
+ 5 APPPATH\Views\layout\main.php(24): view_cell('App\\Cells\\ArtikelTerkini::render')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\layout\\main.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('about', [], true)
+10 APPPATH\Controllers\page.php(15): view('about', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->about()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_ci\\ci4\\public\\index.php')
+CRITICAL - 2025-03-18 14:45:48 --> ArgumentCountError: Too few arguments to function CodeIgniter\View\Cell::__construct(), 0 passed in C:\xampp\htdocs\lab11_ci\ci4\system\Config\Factories.php on line 152 and exactly 1 expected
+[Method: GET, Route: home]
+in SYSTEMPATH\View\Cell.php on line 62.
+ 1 SYSTEMPATH\Config\Factories.php(152): CodeIgniter\View\Cell->__construct()
+ 2 SYSTEMPATH\View\Cell.php(186): CodeIgniter\Config\Factories::__callStatic('cells', [])
+ 3 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 4 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini::render', null, 0, null)
+ 5 APPPATH\Views\layout\main.php(24): view_cell('App\\Cells\\ArtikelTerkini::render')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\layout\\main.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+10 APPPATH\Controllers\page.php(7): view('home', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_ci\\ci4\\public\\index.php')
+ERROR - 2025-03-18 14:48:19 --> mysqli_sql_exception: Unknown column 'created_at' in 'order clause' in C:\xampp\htdocs\lab11_ci\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lab11_ci\ci4\app\Cells\ArtikelTerkini.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\View\Cell.php(283): App\Cells\ArtikelTerkini->render()
+#8 C:\xampp\htdocs\lab11_ci\ci4\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArtikelTerkini), 'render', Array, 'App\\Cells\\Artik...')
+#9 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\Artik...', Array, 0, 'AppCellsArtikel...')
+#10 C:\xampp\htdocs\lab11_ci\ci4\app\Views\layout\main.php(24): view_cell('App\\Cells\\Artik...')
+#11 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(224): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(240): CodeIgniter\View\View->render('layout/main', Array, true)
+#14 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#15 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\page.php(7): view('home', Array)
+#16 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(933): App\Controllers\Page->home()
+#17 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#18 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\lab11_ci\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\lab11_ci\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#21 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#22 C:\xampp\htdocs\lab11_ci\ci4\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#23 {main}
+CRITICAL - 2025-03-18 14:48:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'order clause'
+[Method: GET, Route: home]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Cells\ArtikelTerkini.php(12): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\View\Cell.php(283): App\Cells\ArtikelTerkini->render()
+ 6 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArtikelTerkini), 'render', [], 'App\\Cells\\ArtikelTerkini')
+ 7 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini::render', [], 0, 'AppCellsArtikelTerkinirender40cd750bba9870f18aada2478b24840a')
+ 8 APPPATH\Views\layout\main.php(24): view_cell('App\\Cells\\ArtikelTerkini::render')
+ 9 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\layout\\main.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+12 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+13 APPPATH\Controllers\page.php(7): view('home', [...])
+14 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+15 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+16 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+20 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_ci\\ci4\\public\\index.php')
+CRITICAL - 2025-03-18 14:48:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Cells\ArtikelTerkini.php(12): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\View\Cell.php(283): App\Cells\ArtikelTerkini->render()
+ 8 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArtikelTerkini), 'render', [], 'App\\Cells\\ArtikelTerkini')
+ 9 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini::render', [], 0, 'AppCellsArtikelTerkinirender40cd750bba9870f18aada2478b24840a')
+10 APPPATH\Views\layout\main.php(24): view_cell('App\\Cells\\ArtikelTerkini::render')
+11 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\layout\\main.php')
+12 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+14 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+15 APPPATH\Controllers\page.php(7): view('home', [...])
+16 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+17 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+18 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+21 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+22 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_ci\\ci4\\public\\index.php')
+CRITICAL - 2025-03-18 14:48:19 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Cells\ArtikelTerkini.php(12): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\Cell.php(283): App\Cells\ArtikelTerkini->render()
+ 9 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArtikelTerkini), 'render', [], 'App\\Cells\\ArtikelTerkini')
+10 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini::render', [], 0, 'AppCellsArtikelTerkinirender40cd750bba9870f18aada2478b24840a')
+11 APPPATH\Views\layout\main.php(24): view_cell('App\\Cells\\ArtikelTerkini::render')
+12 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\layout\\main.php')
+13 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+15 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+16 APPPATH\Controllers\page.php(7): view('home', [...])
+17 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+18 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+19 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+23 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_ci\\ci4\\public\\index.php')
+CRITICAL - 2025-03-18 14:50:40 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:11:41 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:11:53 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:11:57 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:11:58 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:11:59 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:11:59 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: artikel]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:12:01 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:12:02 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: artikel]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:12:03 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:12:04 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: artikel]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:12:05 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:12:05 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:12:06 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:12:07 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: artikel]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:12:07 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:12:10 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:12:11 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:12:12 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: artikel]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:12:13 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:12:47 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: artikel]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:12:48 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:14:03 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:14:04 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:14:08 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: artikel]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:14:09 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:14:09 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:14:30 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:16:03 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:16:04 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:16:06 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:16:07 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: artikel]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:16:08 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:16:09 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: artikel]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:16:10 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:16:10 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:16:11 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:16:26 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: artikel]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:16:27 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:16:28 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:16:28 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:16:29 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: artikel]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:16:37 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: artikel]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:16:39 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: artikel]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:16:40 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:16:40 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:18:17 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:18:56 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:19:03 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:19:11 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:19:12 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:19:18 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:19:19 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:19:19 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:19:19 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:26:00 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:26:01 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 15:32:13 --> ArgumentCountError: Too few arguments to function CodeIgniter\View\Cell::__construct(), 0 passed in C:\xampp\htdocs\lab11_ci\ci4\system\Config\Factories.php on line 152 and exactly 1 expected
+[Method: GET, Route: contact]
+in SYSTEMPATH\View\Cell.php on line 62.
+ 1 SYSTEMPATH\Config\Factories.php(152): CodeIgniter\View\Cell->__construct()
+ 2 SYSTEMPATH\View\Cell.php(186): CodeIgniter\Config\Factories::__callStatic('cells', [])
+ 3 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 4 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini::render', null, 0, null)
+ 5 APPPATH\Views\layout\main.php(28): view_cell('App\\Cells\\ArtikelTerkini::render')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\layout\\main.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('contact', [], true)
+10 APPPATH\Controllers\page.php(23): view('contact', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->contact()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_ci\\ci4\\public\\index.php')

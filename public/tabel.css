@@ -1,0 +1,50 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Warna header tabel */
+.table th {
+    background-color: #5696dc; /* Warna biru */
+    color: white; /* Warna teks putih */
+    padding: 8px;
+    /*border: 1px solid #0056b3; /* Warna border biru lebih gelap */
+}
+
+/* Warna body tabel */
+.table td {
+    padding: 8px;
+    border: 1px solid #ddd; /* Warna border abu-abu */
+}
+
+/* Warna baris ganjil */
+.table tr:nth-child(odd) {
+    background-color: #ffffff; /* Warna putih */
+}
+
+/* Warna baris genap */
+.table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Warna abu-abu muda */
+}
+
+/* Warna saat baris dihover */
+.table tr:hover {
+    background-color: #e0e0e0; /* Warna abu-abu lebih gelap saat dihover */
+}
+
+/* Warna tombol */
+.btn {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #505b67; /* Warna biru */
+    border-radius: 4px;
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Warna merah */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Warna merah lebih gelap saat dihover */
+}

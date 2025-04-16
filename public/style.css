@@ -1,0 +1,313 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling tabel */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #5da3fa;
+    color: white;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Tombol */
+.btn {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-danger {
+    background-color: red;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: darkred;
+}
+
+.btn-gray {
+    background-color: gray;
+    color: white;
+}
+
+.btn-gray:hover {
+    background-color: darkgray;
+}
+
+.btn-blue {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-blue:hover {
+    background-color: darkblue;
+}
+
+/* Teks artikel */
+td b {
+    font-size: 16px;
+}
+
+td p {
+    font-size: 12px;
+    color: #555;
+    margin: 5px 0 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Container */
+#container {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    padding: 20px;
+}
+
+header h1 {
+    color: #b5b5b5;
+    font-weight: normal;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav {
+    background-color: #1f73b5;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #1a5c91;
+}
+
+nav a.active {
+    background-color: #165585;
+}
+
+/* Wrapper */
+#wrapper {
+    display: flex;
+    padding: 20px;
+}
+
+/* Main Content */
+#main {
+    flex: 7;
+    padding: 0 20px;
+}
+
+#main h2 {
+    color: #4a4a4a;
+    font-weight: normal;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+#main p {
+    margin-bottom: 15px;
+    color: #666;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+/* Sidebar */
+#sidebar {
+    flex: 3;
+    padding: 0 20px;
+}
+
+.widget-box {
+    margin-bottom: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.widget-box .title {
+    background-color: #4c9ed9;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.widget-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.widget-box ul li {
+    border-bottom: 1px solid #eee;
+    padding: 8px 0;
+}
+
+.widget-box ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.widget-box ul li a:hover {
+    color: #2174b8;
+}
+
+.widget-box p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #wrapper {
+        flex-direction: column;
+    }
+
+    #sidebar {
+        margin-top: 20px;
+    }
+
+    nav a {
+        float: none;
+        width: 100%;
+    }
+
+    #container {
+        width: 95%;
+    }
+}
+
+/* Styling untuk Halaman Login */
+#login-wrapper {
+    width: 350px;
+    margin: 100px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#login-wrapper h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.mb-3 {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color: #1f73b5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #165585;
+}
+
+/* Flash message */
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.alert-danger {
+    background-color: #ffdddd;
+    color: #d9534f;
+    border: 1px solid #d9534f;
+}
