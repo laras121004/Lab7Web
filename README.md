@@ -37,7 +37,7 @@ server menggunakan MySQL. Pastikan MySQL Server sudah dapat dijalankan melalui
 XAMPP.
 
 ## Membuat Database
-~
+~~~
 CREATE DATABASE lab_ci4;
-~
+~~~
 
