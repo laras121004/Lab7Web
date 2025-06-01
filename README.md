@@ -226,10 +226,92 @@ dengan nama index.php.
 
 ![Cuplikan layar 2025-04-15 190538](https://github.com/user-attachments/assets/0dedea8a-0ef1-4a0f-9f79-4cc623ee971d)
 
+# Modul 3: View Layout dan View Cell
+
+## Tujuan
+- Menggunakan View Layout untuk membuat template tampilan.
+- Implementasi View Cell untuk komponen UI modular.
+
+## Langkah-langkah
+- Membuat Layout Utama (main.php):
+  - Template utama dengan renderSection('content') ?>.
+  - Navigasi dan sidebar dengan View Cell.
+- Memodifikasi View:
+  - Menggunakan extend('layout/main') agar tampilan konsisten.
+- Membuat View Cell (ArtikelTerkini.php):
+  - Menampilkan daftar artikel terbaru secara modular.
+- Membuat View untuk View Cell (artikel_terkini.php):
+  - Menampilkan daftar artikel sebagai widget sidebar.
+
+## Cara Menjalankan
+- Pastikan XAMPP/MySQL sudah berjalan.
+- Import database dari file lab_ci4.sql.
+- Jalankan CodeIgniter dengan perintah:
+
+` php spark serve `
+
+![Cuplikan layar 2025-06-01 002709](https://github.com/user-attachments/assets/bdc9459c-525b-4887-995f-00adcfb7917c)
+
+- jalankan dengan link dibawah ini
+
+`http://localhost:8080/home
+ http://localhost:8080/admin/artikel (untuk admin)`
+
+## isi router.php
+
+ ` $routes->get('/home', 'page::home');
+   $routes->get('/about', 'Page::about');
+   $routes->get('/contact', 'Page::contact');
+
+   $routes->get('/artikel', 'Artikel::index');
+   $routes->get('/artikel/(:any)', 'Artikel::view/$1');
+   $routes->group('admin', function($routes) {
+       $routes->get('artikel', 'Artikel::admin_index');
+       $routes->add('artikel/add', 'Artikel::add');
+       $routes->add('artikel/edit/(:any)', 'Artikel::edit/$1');
+       $routes->get('artikel/delete/(:any)','Artikel::delete/$1');
+       }); `
+
+# dokumentasi
+
+## Tampilan codeigniter 4
+
+## Tampilan jika error
+
+![Cuplikan layar 2025-03-18 182320](https://github.com/user-attachments/assets/3b5b7cf3-5baa-42b7-997a-c339b6f9ef18)
+
+## Halaman home
+
+![Cuplikan layar 2025-04-14 013542](https://github.com/user-attachments/assets/49bbf68d-7ad8-4c00-8dbb-1b5e9b736e2b)
+
+## Halaman Artikel
+
+![Cuplikan layar 2025-04-14 013558](https://github.com/user-attachments/assets/91a9e6ef-f621-49ee-bf86-470b1bedfe6c)
+
+## Artikel Detai
+
+## Halaman About
+
+![Cuplikan layar 2025-03-18 194258](https://github.com/user-attachments/assets/c8f5be36-df22-446b-a6b9-4e137da03134)
+
+## Halaman Contact
+
+# Halaman Admin
+
+![Cuplikan layar 2025-04-15 195324](https://github.com/user-attachments/assets/8dfb0d5a-c4e6-4b1d-9e35-b355ba281841)
+
+## Admin add
+
+
+## Admin update
 
 
 
 
+
+
+
+    
 
 
 
