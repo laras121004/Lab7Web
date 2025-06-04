@@ -290,11 +290,15 @@ dengan nama index.php.
 
 ## Artikel Detai
 
+![image](https://github.com/user-attachments/assets/7c367b86-3575-478d-807b-b941b8ae1b0c)
+
 ## Halaman About
 
 ![Cuplikan layar 2025-03-18 194258](https://github.com/user-attachments/assets/c8f5be36-df22-446b-a6b9-4e137da03134)
 
 ## Halaman Contact
+
+![image](https://github.com/user-attachments/assets/31c824e8-d16b-48c7-bb3e-744430dcc201)
 
 # Halaman Admin
 
@@ -302,8 +306,13 @@ dengan nama index.php.
 
 ## Admin add
 
+![Cuplikan layar 2025-06-03 191006](https://github.com/user-attachments/assets/65c7ab8b-e7d5-4478-98d0-af0bc2b229b0)
+
 
 ## Admin update
+
+![Cuplikan layar 2025-06-03 190910](https://github.com/user-attachments/assets/15915e4d-af22-4799-828a-9df96c13a1b8)
+
 
 
 
